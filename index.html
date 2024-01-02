@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>React</title>
+  </head>
+  <body>
+    <!--We are creating a root container -->
+    <h1>Someone else before Root!</h1>
+    <div id="root">
+      <h1>Someone else was here!</h1>
+      <!-- Creating Heading
+        <h1>Hello World!</h1> -->
+      <!-- <script>
+            const heading = document.createElement("h1");
+            heading.innerHTML = "Hello Word from Javascript!"
+
+            // First we need to find our root 
+            const root = document.getElementById("root"); //This root gets reference to this <div> tag on line 10
+            root.appendChild(heading);// This is there on every HTML node
+        </script> -->
+
+      <!-- With the help of these CDN links we have injected React in our code -->
+      <!-- <script
+        crossorigin
+        src="https://unpkg.com/react@18/umd/react.development.js"
+      ></script>
+      <script
+        crossorigin
+        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      ></script> -->
+
+      <!-- Moving all the react code to a seperate file as a good practice -->
+      <!-- <script>
+            // Creating a h1 tag using react
+            // const heading = React.createElement("h1",{}, "Hello World from React!");
+            // const root = ReactDOM.createRoot(document.getElementById("root"));
+            // root.render(heading);
+        </script> -->
+
+      <script type="module" src="./App.js"></script>
+    </div>
+    <h1>Someone else After Root!</h1>
+  </body>
+</html>
